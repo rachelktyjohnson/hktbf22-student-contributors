@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #5fcf80;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  color: #5fcf80;
+}
+
+main {
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main h1 {
+  line-height: 1.1;
+  font-size: 1.9rem;
+  color: white;
+}
+@media (min-width: 768px) {
+  main h1 {
+    font-size: 3rem;
+  }
+}
+main h2 {
+  color: white;
+}
+@media (min-width: 768px) {
+  main h2 {
+    font-size: 2.4rem;
+  }
+}
+main .student-cards {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+}
+@media (min-width: 768px) {
+  main .student-cards {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 25px;
+    grid-gap: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  main .student-cards {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+main .student-cards .student-card {
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  display: block;
+  transition: transform 0.2s ease-in-out;
+  border: 5px solid white;
+}
+main .student-cards .student-card:hover {
+  transform: scale(1.02) rotate(1deg);
+}
+main .student-cards .student-card .student-name {
+  font-size: 1.3rem;
+}
+main .student-cards .student-card .student-name, main .student-cards .student-card .techdegree, main .student-cards .student-card .favorite {
+  margin: 10px;
+}
+main .student-cards .student-card.fewd {
+  border: 5px solid #3659a2;
+}
+main .student-cards .student-card.fewd a {
+  color: #4970c2;
+}
+main .student-cards .student-card.fsjs, main .student-cards .student-card.web {
+  border: 5px solid #0e8397;
+}
+main .student-cards .student-card.fsjs a, main .student-cards .student-card.web a {
+  color: #12abc6;
+}
+main .student-cards .student-card.python, main .student-cards .student-card.data {
+  border: 5px solid #9f4b84;
+}
+main .student-cards .student-card.python a, main .student-cards .student-card.data a {
+  color: #b7669d;
+}
+main .student-cards .student-card.ux {
+  border: 5px solid #4a4290;
+}
+main .student-cards .student-card.ux a {
+  color: #5e54b1;
+}
+
+footer {
+  margin-top: auto;
+  color: white;
+  padding: 5px;
+}
+
+/*# sourceMappingURL=styles.css.map */
