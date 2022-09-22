@@ -1,4 +1,5 @@
-# Hacktoberfest 2022 Project 1 for Treehouse TechDegree Students
+### Hacktoberfest 2022 for Treehouse TechDegree Students
+# Project 1 - TechDegree Student Contributors
 
 Welcome to Hacktoberfest learners! This is one of the projects that we have created for you so you can experience Hacktoberfest in a safe and encouraging environment.
 
