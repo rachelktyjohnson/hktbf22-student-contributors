@@ -81,30 +81,9 @@ main{
       .student-name, .techdegree, .favorite{
         margin:10px;
       }
-      border: 5px solid white;
-      &.fewd{
-        border: 5px solid $color-fewd;
-        a{
-          color:lighten($color-fewd, 10%);
-        }
-      }
-      &.fsjs, &.web{
-        border: 5px solid $color-fsjs;
-        a{
-          color:lighten($color-fsjs, 10%);
-        }
-      }
-      &.python, &.data{
-        border: 5px solid $color-python;
-        a{
-          color:lighten($color-python, 10%);
-        }
-      }
-      &.ux{
-        border: 5px solid $color-ux;
-        a{
-          color:lighten($color-ux, 10%);
-        }
+      border: 5px solid darken($color-treehouse, 10%);
+      a{
+        color: darken($color-treehouse, 10%);
       }
 
     }

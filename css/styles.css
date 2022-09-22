@@ -70,7 +70,7 @@ main .student-cards .student-card {
   border-radius: 10px;
   padding: 10px;
   display: block;
-  border: 5px solid white;
+  border: 5px solid #3ac162;
 }
 main .student-cards .student-card .student-name {
   font-size: 1.3rem;
@@ -78,29 +78,8 @@ main .student-cards .student-card .student-name {
 main .student-cards .student-card .student-name, main .student-cards .student-card .techdegree, main .student-cards .student-card .favorite {
   margin: 10px;
 }
-main .student-cards .student-card.fewd {
-  border: 5px solid #3659a2;
-}
-main .student-cards .student-card.fewd a {
-  color: #4970c2;
-}
-main .student-cards .student-card.fsjs, main .student-cards .student-card.web {
-  border: 5px solid #0e8397;
-}
-main .student-cards .student-card.fsjs a, main .student-cards .student-card.web a {
-  color: #12abc6;
-}
-main .student-cards .student-card.python, main .student-cards .student-card.data {
-  border: 5px solid #9f4b84;
-}
-main .student-cards .student-card.python a, main .student-cards .student-card.data a {
-  color: #b7669d;
-}
-main .student-cards .student-card.ux {
-  border: 5px solid #4a4290;
-}
-main .student-cards .student-card.ux a {
-  color: #5e54b1;
+main .student-cards .student-card a {
+  color: #3ac162;
 }
 
 footer {
