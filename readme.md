@@ -24,4 +24,4 @@ And as always, feel free to reach out in Slack if you have any questions!
 Our other Hacktoberfest 2022 repos that we made for you:
 - Project 2 - HTML/CSS Quiz App
 - Project 3 - ???
-- Proect 4 - Mike the Frog Chatbot
+- Project 4 - Mike the Frog Chatbot
