@@ -26,7 +26,8 @@ https://rachelktyjohnson.github.io/hktbf22-student-contributors/
 
 
 ## More projects please!
-Our other Hacktoberfest 2022 repos that we made for TechDegree Students:
+Here are our Hacktoberfest 2022 repos that we made for TechDegree Students:
+- Project 1 - TechDegree Student Contributors
 - Project 2 - HTML/CSS Quiz App
 - Project 3 - ???
 - Project 4 - Mike the Frog Chatbot
