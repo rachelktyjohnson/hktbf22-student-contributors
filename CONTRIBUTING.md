@@ -1,7 +1,7 @@
-### Hacktoberfest 2022 for Treehouse TechDegree Students
-# Project 1 - TechDegree Student Contributors
-
-Welcome to Hacktoberfest learners! This is one of the projects that we have created for you so you can experience Hacktoberfest in a safe and encouraging environment.
+    ### Hacktoberfest 2022 for Treehouse TechDegree Students
+    # Project 1 - TechDegree Student Contributors
+    
+    Welcome to Hacktoberfest learners! This is one of the projects that we have created for you so you can experience Hacktoberfest in a safe and encouraging environment.
 
 In this first project, you are encouraged to tackle 2 issues:
 1. Issue #1 for everyone: add yourself to the list of contributors. This is a great way to practice your first Pull Request.
