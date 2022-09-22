@@ -7,7 +7,6 @@ In this first project, you are encouraged to tackle 2 issues:
 2. Pick a 2nd issue that you would like to work on! Make sure you comment on the issue or ping me (Rachel) on Slack to claim the issue and so I can assign you to it.
 
 
----
 
 ## New to Pull Requests?
 Not to worry, we were all there once! Here are a few resources to help you along the way
@@ -17,7 +16,9 @@ Not to worry, we were all there once! Here are a few resources to help you along
 
 And as always, feel free to reach out in Slack if you have any questions!
 
----
+
+
+## More projects please!
 
 Our other Hacktoberfest 2022 repos that we made for you:
 - Project 2 - HTML/CSS Quiz App
