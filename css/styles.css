@@ -70,11 +70,7 @@ main .student-cards .student-card {
   border-radius: 10px;
   padding: 10px;
   display: block;
-  transition: transform 0.2s ease-in-out;
   border: 5px solid white;
-}
-main .student-cards .student-card:hover {
-  transform: scale(1.02) rotate(1deg);
 }
 main .student-cards .student-card .student-name {
   font-size: 1.3rem;
