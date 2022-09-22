@@ -1,7 +1,4 @@
-    ### Hacktoberfest 2022 for Treehouse TechDegree Students
-    # Project 1 - TechDegree Student Contributors
-    
-    Welcome to Hacktoberfest learners! This is one of the projects that we have created for you so you can experience Hacktoberfest in a safe and encouraging environment.
+# Contributing
 
 In this first project, you are encouraged to tackle 2 issues:
 1. Issue #1 for everyone: add yourself to the list of contributors. This is a great way to practice your first Pull Request.
@@ -14,8 +11,6 @@ In this first project, you are encouraged to tackle 2 issues:
 3. A repo maintainer will respond to you ASAP to make sure that you've commented on the Issue on Github. If all is well, you will be assigned the Issue.
 4. Start working away on it!
 
-**NOTE: Any comments that do not follow these instructions will be ignored**
-
 
 ## New to Pull Requests?
 Not to worry, we were all there once! Here are a few resources to help you along the way
@@ -25,11 +20,3 @@ Not to worry, we were all there once! Here are a few resources to help you along
 
 And as always, feel free to reach out in Slack if you have any questions!
 
-
-
-## More projects please!
-
-Our other Hacktoberfest 2022 repos that we made for you:
-- Project 2 - HTML/CSS Quiz App
-- Project 3 - ???
-- Project 4 - Mike the Frog Chatbot
