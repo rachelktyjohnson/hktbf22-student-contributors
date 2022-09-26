@@ -5,6 +5,13 @@ const data = [
         techdegree_slug: "data",
         favorite_course_name: "Copyright Basics",
         favorite_course_url: "https://teamtreehouse.com/library/copyright-basics"
+    },
+    {
+        name: "Rohald van Merode",
+        treehouse_username: "rohald89",
+        techdegree_slug: "fsjs",
+        favorite_course_name: "How to Learn Online Like a Pro",
+        favorite_course_url: "https://teamtreehouse.com/library/how-to-learn-online-like-a-pro-with-guil-hernandez"
     }
 ]
 
