@@ -10,7 +10,7 @@ This project is a simple one! We want to pull together a nice one-page website t
 
 This project was created for Treehouse TechDegree students to be able to try their hand at Pull Requests and to work on an open source project together.
 
-Please refer to [CONTRIBUTING](CONTRIBUTING.md) for instructions and rules to contribute to this project. You can also reach out in your TechDegree Slack's #hacktoberfest2022 channel!
+Please refer to [CONTRIBUTING](CONTRIBUTING.md) for instructions and rules to contribute to this project. You can also reach out in your TechDegree Slack's #code-adventures channel!
 
 :bangbang: **Comments and Pull Requests from users who are not TechDegree students will be ignored, and repeat offenders will be marked as spam.** This is a closed repo for TechDegree students so they can learn in a safe group environment.
 
