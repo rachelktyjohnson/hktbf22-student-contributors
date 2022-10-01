@@ -14,7 +14,7 @@ data.forEach((student) => {
         "</div>" +
         "<div class='favourite'>" +
         "<h4>Favourite Video/Course</h4>" +
-        `<p><a href='${student.favorite_course_url}'>${student.favorite_course_name}</a></p>` +
+        `<p><a target="_blank" href='${student.favorite_course_url}'>${student.favorite_course_name}</a></p>` +
         "</div>" +
         "</div>"
 
