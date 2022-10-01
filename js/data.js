@@ -22,6 +22,14 @@ const data = [
     favorite_course_url:
       "https://teamtreehouse.com/library/how-to-learn-online-like-a-pro-with-guil-hernandez",
   },
+  {
+    name: "Laura Coronel",
+    treehouse_username: "lauracoronel",
+    techdegree_slug: "fsjs",
+    favorite_course_name: "Working with the Fetch API",
+    favorite_course_url:
+      "https://teamtreehouse.com/library/working-with-the-fetch-api",
+  },
 ];
 
 const slug_map = {
