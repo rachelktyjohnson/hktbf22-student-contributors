@@ -1,5 +1,13 @@
 const data = [
   {
+    name: "Matthew Pantel",
+    treehouse_username: "matthewpantel",
+    techdegree_slug: "fsjs",
+    favorite_course_name: "Modular CSS with Sass",
+    favorite_course_url:
+      "https://teamtreehouse.com/library/modular-css-with-sass",
+  },
+  {
     name: "Rachel Johnson",
     treehouse_username: "rachelktyjohnson",
     techdegree_slug: "data",
@@ -13,14 +21,6 @@ const data = [
     favorite_course_name: "How to Learn Online Like a Pro",
     favorite_course_url:
       "https://teamtreehouse.com/library/how-to-learn-online-like-a-pro-with-guil-hernandez",
-  },
-  {
-    name: "Matthew Pantel",
-    treehouse_username: "matthewpantel",
-    techdegree_slug: "fsjs",
-    favorite_course_name: "Modular CSS with Sass",
-    favorite_course_url:
-      "https://teamtreehouse.com/library/modular-css-with-sass",
   },
   {
     name: "Laura Coronel",
