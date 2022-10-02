@@ -25,6 +25,58 @@ const randomizeStudentDisplay = data
 
 student_cards.innerHTML = student_cards_html;
 
+// Tech degree filter function
+
+const main = document.querySelector("main");
+addFilterButtons();
+
+function addFilterButtons() {
+  main.innerHTML += 
+  `<div class="filterButtons">
+  <button class="techDegree">FSJS</button>
+  <button class="techDegree" style="animation-delay:0.07s">FEWD</button>
+  <button class="techDegree" style="animation-delay:0.14s">WEB</button>
+  <button class="techDegree" style="animation-delay:0.21s">PYTHON</button>
+  <button class="techDegree" style="animation-delay:0.28s">DATA</button>
+  <button class="techDegree" style="animation-delay:0.35s">UX</button>
+  <button class="techDegree" style="animation-delay:0.41s">ALL</button>
+  </div>`;
+  const filterButtons = document.querySelector(".filterButtons");
+  const buttons = document.getElementsByClassName("techDegree")
+  filterButtons.addEventListener("click", e =>{
+    for (i=0; i<buttons.length; i++){
+      buttons[i].classList.remove("techDegree-active")
+      console.log(buttons[i])
+    }
+    e.target.classList.add("techDegree-active")
+    filterTechDegree(e.target.innerHTML.toLowerCase());
+    
+  }); 
+}
+
+function filterTechDegree(e) {
+  if(e === "all") {
+    const degrees = document.getElementsByClassName("student-card");
+    for (const degree of degrees) {
+      degree.style.display = '';
+    }
+
+  } else {
+      for (let i=0; i<data.length;i++){
+        const student = data[i];
+        const techDegree = student.techdegree_slug;
+        if (e !== techDegree) {
+          const degrees = document.getElementsByClassName(`${techDegree}`)
+          for (const degree of degrees) {
+            degree.style.display = 'none';
+          }
+        } else {
+          const degrees = document.getElementsByClassName(`${techDegree}`)
+          for (const degree of degrees) {
+            degree.style.display = '';
+          }}
+}}
+}
 const addMike = () => {
     const randomIndex = Math.floor(Math.random() * data.length);
     const randomStudentCard = document.querySelectorAll(".student-card")[randomIndex];
