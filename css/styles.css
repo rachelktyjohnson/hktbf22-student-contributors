@@ -88,4 +88,45 @@ footer {
   padding: 5px;
 }
 
+
+/* styles for buttons */
+
+.techDegree {
+  color:#5fcf80;
+  padding: 7px 15px;
+  font-size: 1em;
+  margin: 20px 5px;
+  border-radius: 5px;
+  border: solid 3px #3ac162;
+  background-color: white;
+  box-shadow: inset;
+  animation: bouncy 5s linear;
+  position: relative;
+  transition: all .5s ease-in-out;
+
+
+}
+
+.techDegree:hover {
+  background-color: #5fcf80;
+  cursor: pointer;
+  color: white;
+}
+
+.techDegree-active {
+  background-color: #5fcf80;
+  color: white;
+}
+
+@keyframes bouncy {
+  0%{top:0em}
+  40%{top:0em}
+  43%{top:-0.9em}
+  46%{top:0em}
+  48%{top:-0.4em}
+  50%{top:0em}
+  100%{top:0em;}
+}
+
+
 /*# sourceMappingURL=styles.css.map */
