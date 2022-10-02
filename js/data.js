@@ -34,7 +34,7 @@ const data = [
     name: "Lyndsay Futrell",
     treehouse_username: "lyndsayfutrell",
     techdegree_slug: "fsjs",
-    favorite_course_name: "Object-Oriented JavaScript,
+    favorite_course_name: "Object-Oriented JavaScript",
     favorite_course_url:
       "https://teamtreehouse.com/library/objectoriented-javascript-2",
   },
