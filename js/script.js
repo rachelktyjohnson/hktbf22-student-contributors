@@ -24,3 +24,11 @@ const randomizeStudentDisplay = data
   });
 
 student_cards.innerHTML = student_cards_html;
+
+const addMike = () => {
+    const randomIndex = Math.floor(Math.random() * data.length);
+    const randomStudentCard = document.querySelectorAll(".student-card")[randomIndex];
+    randomStudentCard.insertAdjacentHTML("beforeend", '<img src="../images/mike-wave.gif" alt"Mike waving" class="mike">');
+}
+
+addMike();

@@ -71,6 +71,19 @@ main .student-cards .student-card {
   padding: 10px;
   display: block;
   border: 5px solid #3ac162;
+  position: relative;
+  overflow: hidden;
+}
+.mike {
+    height: 35px;
+    position: absolute;
+    bottom: 0;
+    right: -2.4rem;
+    transform: rotate(-45deg);
+    transition: right 0.5s ease;
+}
+.student-card:hover .mike {
+    right: -0.4rem;
 }
 main .student-cards .student-card .student-name {
   font-size: 1.3rem;
