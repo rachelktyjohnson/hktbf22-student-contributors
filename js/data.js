@@ -1,5 +1,13 @@
 const data = [
   {
+    name: "Geoff Millar",
+    treehouse_username: "jajablinky",
+    techdegree_slug: "fsjs",
+    favorite_course_name: "Working with the Fetch API",
+    favorite_course_url:
+      "https://teamtreehouse.com/library/working-with-the-fetch-api",
+  },
+  {
     name: "Matthew Pantel",
     treehouse_username: "matthewpantel",
     techdegree_slug: "fsjs",
