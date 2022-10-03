@@ -1,5 +1,14 @@
 const data = [
   {
+    name: "Olushola Oludipe",
+    treehouse_username: "olusholaoludipe2",
+    techdegree_slug:"web",
+    favorite_course_name:"Express",
+    favorite_course_url:
+    "https://teamtreehouse.com/library/introduction-to-rest-apis",
+
+  },
+  {
     name: "Geoff Millar",
     treehouse_username: "jajablinky",
     techdegree_slug: "fsjs",
