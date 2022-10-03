@@ -46,34 +46,50 @@ function addFilterButtons() {
   filterButtons.addEventListener("click", e =>{
     for (i=0; i<buttons.length; i++){
       buttons[i].classList.remove("techDegree-active")
-      console.log(buttons[i])
     }
     e.target.classList.add("techDegree-active")
-    filterTechDegree(e.target.innerHTML.toLowerCase());
+    filterTechDegree(e.target);
     
   }); 
 }
 
+let hiddenCount = 0;
 function filterTechDegree(e) {
-  if(e === "all") {
-    const degrees = document.getElementsByClassName("student-card");
+  buttonText = e.innerHTML.toLowerCase();
+  let degrees = '';
+  if(buttonText === "all") {
+    degrees = document.getElementsByClassName("student-card");
+    hiddenCount = 1;
     for (const degree of degrees) {
       degree.style.display = '';
     }
 
   } else {
+      hiddenCount = 0;
       for (let i=0; i<data.length;i++){
         const student = data[i];
         const techDegree = student.techdegree_slug;
-        if (e !== techDegree) {
-          const degrees = document.getElementsByClassName(`${techDegree}`)
+        if (buttonText !== techDegree) {
+          degrees = document.getElementsByClassName(`${techDegree}`)
           for (const degree of degrees) {
             degree.style.display = 'none';
-          }
+          } 
+          hiddenCount++;
         } else {
-          const degrees = document.getElementsByClassName(`${techDegree}`)
+          degrees = document.getElementsByClassName(`${techDegree}`)
           for (const degree of degrees) {
             degree.style.display = '';
-          }}
-}}
+          }
+        }
+}
+    if (hiddenCount === data.length) {
+      alert("No Students for this TechDegree. Please select a new TechDegree");
+      degrees = document.getElementsByClassName("student-card");
+      for (const degree of degrees) {
+        degree.style.display = '';
+      }
+      hiddenCount = 0;
+      e.classList.remove("techDegree-active")
+    }
+}
 }
