@@ -1,4 +1,10 @@
 const student_cards = document.querySelector(".student-cards");
+const studentCardsFSJS = document.getElementsByClassName('student-card fsjs');
+const studentCardsData = document.getElementsByClassName('student-card data');
+const studentCardsUX = document.getElementsByClassName('student-card ux');
+const studentCardsFEWD = document.getElementsByClassName('student-card fewd');
+const studentCardsWeb = document.getElementsByClassName('student-card web');
+const studentCardsPython = document.getElementsByClassName('student-card python');
 
 let student_cards_html = "";
 
@@ -84,3 +90,22 @@ const addMike = () => {
 }
 
 addMike();
+
+/* 
+  CSS styling dependent on what tech degree.
+*/
+
+const colorUpdate = (degree, color) => {
+  Array.from(degree).forEach(student => {
+    student.style.borderColor = color;
+    student.children[0].style.color = color;
+    student.children[2].children[1].children[0].style.color = color;
+  });
+}
+
+colorUpdate(studentCardsFSJS, '#0e8397');
+colorUpdate(studentCardsWeb, '#0e8397');
+colorUpdate(studentCardsData, '#9f4b84');
+colorUpdate(studentCardsPython, '#9f4b84');
+colorUpdate(studentCardsFEWD, '#3659a2');
+colorUpdate(studentCardsUX, '#4a4290');
