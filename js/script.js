@@ -5,7 +5,6 @@ const studentCardsUX = document.getElementsByClassName('student-card ux');
 const studentCardsFEWD = document.getElementsByClassName('student-card fewd');
 const studentCardsWeb = document.getElementsByClassName('student-card web');
 const studentCardsPython = document.getElementsByClassName('student-card python');
-const a = document.getElementsByTagName('a');
 
 let student_cards_html = "";
 
@@ -44,15 +43,17 @@ addMike();
   CSS styling dependent on what tech degree.
 */
 
-const colorUpdate = (degree, color, a) => {
+const colorUpdate = (degree, color) => {
   Array.from(degree).forEach(student => {
     student.style.borderColor = color;
+    student.children[0].style.color = color;
+    student.children[2].children[1].children[0].style.color = color;
   });
 }
 
-colorUpdate(studentCardsFSJS, '#0e8397', a);
-colorUpdate(studentCardsWeb, '#0e8397', a);
-colorUpdate(studentCardsData, '#9f4b84', a);
-colorUpdate(studentCardsPython, '#9f4b84', a);
-colorUpdate(studentCardsFEWD, '#3659a2', a);
-colorUpdate(studentCardsUX, '#4a4290', a);
+colorUpdate(studentCardsFSJS, '#0e8397');
+colorUpdate(studentCardsWeb, '#0e8397');
+colorUpdate(studentCardsData, '#9f4b84');
+colorUpdate(studentCardsPython, '#9f4b84');
+colorUpdate(studentCardsFEWD, '#3659a2');
+colorUpdate(studentCardsUX, '#4a4290');
