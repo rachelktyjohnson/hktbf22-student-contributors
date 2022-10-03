@@ -69,7 +69,7 @@ function filterTechDegree(e) {
       for (let i=0; i<data.length;i++){
         const student = data[i];
         const techDegree = student.techdegree_slug;
-        if (buttonText !== techDegree) {
+        if (buttonText !== techDegree && buttonText.length < 7) {
           degrees = document.getElementsByClassName(`${techDegree}`)
           for (const degree of degrees) {
             degree.style.display = 'none';
