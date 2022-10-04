@@ -133,29 +133,38 @@ const colorUpdate = (degree, color) => {
 //   console.log(target.e)
 // })
 
+const updateBackground= (degreeText,color) =>{
+  backgroundColor.style.backgroundColor =color;
+  Array.from(degreeText).forEach(button =>{
+    button.style.backgroundColor =color
+    button.style.borderColor ='white'
+    button.style.color ='white'
+  })
+}
+
 const filterButtons = document.querySelector(".filterButtons");
 const buttons = document.getElementsByClassName("techDegree");
-filterButtons.addEventListener("click", e =>{
-  if(e.target.innerHTML === "DATA"){
-    backgroundColor.style.backgroundColor ='#9f4b84'
-    for(i=0; i<buttons.length;i++){
-      buttons[i].style.backgroundColor ='#9f4b84'
-      buttons[i].style.borderColor ='white'
-      buttons[i].style.color ='white'
-    }
-  }
-  else if(e.target.innerHTML === "FSJS"){
-    backgroundColor.style.backgroundColor ='#0e8397'
-    for(i=0; i<buttons.length;i++){
-      buttons[i].style.backgroundColor ='#0e8397'
-      buttons[i].style.borderColor ='white'
-      buttons[i].style.color ='white'
-    }
-  }
- 
-  
-  
 
+filterButtons.addEventListener("click", e =>{
+  let buttonText = e.target.innerHTML.toLowerCase();
+  console.log(buttonText)
+
+  if(buttonText=== "data" || buttonText=== 'python' ){
+    updateBackground(buttons,'#9f4b84');
+  }
+  else if(buttonText==='web' || buttonText==='fsjs'){
+    updateBackground(buttons,'#0e8397');
+  }
+  else if(buttonText==='fewd'){
+    updateBackground(buttons,'#3659a2');
+  }
+  else if(buttonText==='ux'){
+    updateBackground(buttons,'#4a4290');
+  }
+  
+  else{
+    updateBackground(buttons,'#3ac162')
+  }
   
 }); 
   
