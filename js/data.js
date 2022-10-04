@@ -55,6 +55,14 @@ const data = [
     favorite_course_url:
       "https://teamtreehouse.com/library/objectoriented-javascript-2",
   },
+  {
+    name: "Travis Alstrand",
+    treehouse_username: "travisalstrand",
+    techdegree_slug: "python",
+    favorite_course_name: "Python Basics",
+    favorite_course_url:
+      "https://teamtreehouse.com/library/python-basics-3",
+  },
 ];
 
 const slug_map = {
