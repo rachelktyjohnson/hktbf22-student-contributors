@@ -5,6 +5,9 @@ const studentCardsUX = document.getElementsByClassName('student-card ux');
 const studentCardsFEWD = document.getElementsByClassName('student-card fewd');
 const studentCardsWeb = document.getElementsByClassName('student-card web');
 const studentCardsPython = document.getElementsByClassName('student-card python');
+const backgroundColor = document.querySelector('body');
+
+
 
 let student_cards_html = "";
 
@@ -48,7 +51,7 @@ function addFilterButtons() {
   <button class="techDegree" style="animation-delay:0.41s">ALL</button>
   </div>`;
   const filterButtons = document.querySelector(".filterButtons");
-  const buttons = document.getElementsByClassName("techDegree")
+  const buttons = document.getElementsByClassName("techDegree");
   filterButtons.addEventListener("click", e =>{
     for (i=0; i<buttons.length; i++){
       buttons[i].classList.remove("techDegree-active")
@@ -58,6 +61,8 @@ function addFilterButtons() {
     
   }); 
 }
+
+
 
 let hiddenCount = 0;
 function filterTechDegree(e) {
@@ -116,8 +121,49 @@ const colorUpdate = (degree, color) => {
     student.style.borderColor = color;
     student.children[0].style.color = color;
     student.children[2].children[1].children[0].style.color = color;
+    
+
   });
 }
+//  const buttons = document.getElementsByClassName("techDegree");
+
+// console.log(buttons)
+
+// buttons.addEventListener('click', e=>{
+//   console.log(target.e)
+// })
+
+const filterButtons = document.querySelector(".filterButtons");
+const buttons = document.getElementsByClassName("techDegree");
+filterButtons.addEventListener("click", e =>{
+  if(e.target.innerHTML === "DATA"){
+    backgroundColor.style.backgroundColor ='#9f4b84'
+    for(i=0; i<buttons.length;i++){
+      buttons[i].style.backgroundColor ='#9f4b84'
+      buttons[i].style.borderColor ='white'
+      buttons[i].style.color ='white'
+    }
+  }
+  else if(e.target.innerHTML === "FSJS"){
+    backgroundColor.style.backgroundColor ='#0e8397'
+    for(i=0; i<buttons.length;i++){
+      buttons[i].style.backgroundColor ='#0e8397'
+      buttons[i].style.borderColor ='white'
+      buttons[i].style.color ='white'
+    }
+  }
+ 
+  
+  
+
+  
+}); 
+  
+
+  
+
+
+
 
 colorUpdate(studentCardsFSJS, '#0e8397');
 colorUpdate(studentCardsWeb, '#0e8397');
