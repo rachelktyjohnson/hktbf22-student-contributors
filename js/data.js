@@ -9,15 +9,6 @@ const data = [
 
   },
   {
-    name: "Olukemi Oludipe",
-    treehouse_username: "olukemioludipe2",
-    techdegree_slug:"ux",
-    favorite_course_name:"go",
-    favorite_course_url:
-    "https://teamtreehouse.com/library/introduction-to-rest-apis",
-
-  },
-  {
     name: "Geoff Millar",
     treehouse_username: "jajablinky",
     techdegree_slug: "fsjs",

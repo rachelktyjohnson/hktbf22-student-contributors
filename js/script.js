@@ -142,6 +142,17 @@ const updateBackground= (degreeText,color) =>{
   })
 }
 
+function returnStyleToDefault(degreeText){
+  backgroundColor.style.backgroundColor = "#5fcf80";
+  Array.from(degreeText).forEach(button =>{
+    button.style.backgroundColor ='white';
+    button.style.borderColor ='#3ac162';
+    button.style.color ='#5fcf80';
+  })
+
+
+}
+
 const filterButtons = document.querySelector(".filterButtons");
 const buttons = document.getElementsByClassName("techDegree");
 
@@ -163,7 +174,7 @@ filterButtons.addEventListener("click", e =>{
   }
   
   else{
-    updateBackground(buttons,'#3ac162')
+    returnStyleToDefault(buttons);
   }
   
 }); 
