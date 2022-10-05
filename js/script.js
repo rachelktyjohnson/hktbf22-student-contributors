@@ -5,6 +5,9 @@ const studentCardsUX = document.getElementsByClassName('student-card ux');
 const studentCardsFEWD = document.getElementsByClassName('student-card fewd');
 const studentCardsWeb = document.getElementsByClassName('student-card web');
 const studentCardsPython = document.getElementsByClassName('student-card python');
+const backgroundColor = document.querySelector('body');
+
+
 
 let student_cards_html = "";
 
@@ -48,7 +51,7 @@ function addFilterButtons() {
   <button class="techDegree" style="animation-delay:0.41s">ALL</button>
   </div>`;
   const filterButtons = document.querySelector(".filterButtons");
-  const buttons = document.getElementsByClassName("techDegree")
+  const buttons = document.getElementsByClassName("techDegree");
   filterButtons.addEventListener("click", e =>{
     for (i=0; i<buttons.length; i++){
       buttons[i].classList.remove("techDegree-active")
@@ -58,6 +61,8 @@ function addFilterButtons() {
     
   }); 
 }
+
+
 
 let hiddenCount = 0;
 function filterTechDegree(e) {
@@ -116,8 +121,69 @@ const colorUpdate = (degree, color) => {
     student.style.borderColor = color;
     student.children[0].style.color = color;
     student.children[2].children[1].children[0].style.color = color;
+    
+
   });
 }
+//  const buttons = document.getElementsByClassName("techDegree");
+
+// console.log(buttons)
+
+// buttons.addEventListener('click', e=>{
+//   console.log(target.e)
+// })
+
+const updateBackground= (degreeText,color) =>{
+  backgroundColor.style.backgroundColor =color;
+  Array.from(degreeText).forEach(button =>{
+    button.style.backgroundColor =color
+    button.style.borderColor ='white'
+    button.style.color ='white'
+  })
+}
+
+function returnStyleToDefault(degreeText){
+  backgroundColor.style.backgroundColor = "#5fcf80";
+  Array.from(degreeText).forEach(button =>{
+    button.style.backgroundColor ='white';
+    button.style.borderColor ='#3ac162';
+    button.style.color ='#5fcf80';
+  })
+
+
+}
+
+const filterButtons = document.querySelector(".filterButtons");
+const buttons = document.getElementsByClassName("techDegree");
+
+filterButtons.addEventListener("click", e =>{
+  let buttonText = e.target.innerHTML.toLowerCase();
+  console.log(buttonText)
+
+  if(buttonText=== "data" || buttonText=== 'python' ){
+    updateBackground(buttons,'#9f4b84');
+  }
+  else if(buttonText==='web' || buttonText==='fsjs'){
+    updateBackground(buttons,'#0e8397');
+  }
+  else if(buttonText==='fewd'){
+    updateBackground(buttons,'#3659a2');
+  }
+  else if(buttonText==='ux'){
+    updateBackground(buttons,'#4a4290');
+  }
+  
+  else{
+    returnStyleToDefault(buttons);
+  }
+  
+}); 
+  
+
+  
+
+
+
 
 colorUpdate(studentCardsFSJS, '#0e8397');
 colorUpdate(studentCardsWeb, '#0e8397');
