@@ -39,12 +39,12 @@ addFilterButtons();
 function addFilterButtons() {
   main.innerHTML += 
   `<div class="filterButtons">
-  <button class="techDegree fsjs">FSJS</button>
-  <button class="techDegree fewd" style="animation-delay:0.07s">FEWD</button>
-  <button class="techDegree web" style="animation-delay:0.14s">WEB</button>
-  <button class="techDegree py" style="animation-delay:0.21s">PYTHON</button>
-  <button class="techDegree data" style="animation-delay:0.28s">DATA</button>
-  <button class="techDegree ux" style="animation-delay:0.35s">UX</button>
+  <button class="techDegree fsjs-btn">FSJS</button>
+  <button class="techDegree fewd-btn" style="animation-delay:0.07s">FEWD</button>
+  <button class="techDegree web-btn" style="animation-delay:0.14s">WEB</button>
+  <button class="techDegree py-btn" style="animation-delay:0.21s">PYTHON</button>
+  <button class="techDegree data-btn" style="animation-delay:0.28s">DATA</button>
+  <button class="techDegree ux-btn" style="animation-delay:0.35s">UX</button>
   <button class="techDegree" style="animation-delay:0.41s">ALL</button>
   </div>`;
   const filterButtons = document.querySelector(".filterButtons");

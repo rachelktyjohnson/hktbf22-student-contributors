@@ -128,27 +128,27 @@ footer {
   transition: all .5s ease-in-out;
 }
 
-.techDegree.fewd {
+.techDegree.fewd-btn {
   color: var(--color-fewd);
   border: solid 3px var(--color-fewd);
 }
-.techDegree.fsjs {
+.techDegree.fsjs-btn {
   color: var(--color-fsjs);
   border: solid 3px var(--color-fsjs);
 }
-.techDegree.web {
+.techDegree.web-btn {
   color: var(--color-web);
   border: solid 3px var(--color-web);
 }
-.techDegree.py {
+.techDegree.py-btn {
   color: var(--color-py);
   border: solid 3px var(--color-py);
 }
-.techDegree.data {
+.techDegree.data-btn {
   color: var(--color-data);
   border: solid 3px var(--color-data);
 }
-.techDegree.ux {
+.techDegree.ux-btn {
   color: var(--color-ux);
   border: solid 3px var(--color-ux);
 }
