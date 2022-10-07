@@ -42,12 +42,12 @@ addFilterButtons();
 function addFilterButtons() {
   main.innerHTML += 
   `<div class="filterButtons">
-  <button class="techDegree">FSJS</button>
-  <button class="techDegree" style="animation-delay:0.07s">FEWD</button>
-  <button class="techDegree" style="animation-delay:0.14s">WEB</button>
-  <button class="techDegree" style="animation-delay:0.21s">PYTHON</button>
-  <button class="techDegree" style="animation-delay:0.28s">DATA</button>
-  <button class="techDegree" style="animation-delay:0.35s">UX</button>
+  <button class="techDegree fsjs-btn">FSJS</button>
+  <button class="techDegree fewd-btn" style="animation-delay:0.07s">FEWD</button>
+  <button class="techDegree web-btn" style="animation-delay:0.14s">WEB</button>
+  <button class="techDegree py-btn" style="animation-delay:0.21s">PYTHON</button>
+  <button class="techDegree data-btn" style="animation-delay:0.28s">DATA</button>
+  <button class="techDegree ux-btn" style="animation-delay:0.35s">UX</button>
   <button class="techDegree" style="animation-delay:0.41s">ALL</button>
   </div>`;
   const filterButtons = document.querySelector(".filterButtons");
@@ -185,9 +185,9 @@ filterButtons.addEventListener("click", e =>{
 
 
 
-colorUpdate(studentCardsFSJS, '#0e8397');
-colorUpdate(studentCardsWeb, '#0e8397');
-colorUpdate(studentCardsData, '#9f4b84');
-colorUpdate(studentCardsPython, '#9f4b84');
-colorUpdate(studentCardsFEWD, '#3659a2');
-colorUpdate(studentCardsUX, '#4a4290');
+colorUpdate(studentCardsFSJS, '#1e1efc');
+colorUpdate(studentCardsWeb, '#ffba3b');
+colorUpdate(studentCardsData, '#8511ba');
+colorUpdate(studentCardsPython, '#1edbfc');
+colorUpdate(studentCardsFEWD, '#07870b');
+colorUpdate(studentCardsUX, '#d111ce');

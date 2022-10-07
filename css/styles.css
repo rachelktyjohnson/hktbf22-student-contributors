@@ -5,17 +5,27 @@
   text-align: center;
   font-family: "Nunito", sans-serif;
   box-sizing: border-box;
+
+  --color-bckgrnd: #5fcf80;
+  --color-bckgrnd-dark: #3ac162;
+
+  --color-fewd: #07870b;
+  --color-fsjs: #1e1efc;
+  --color-web: #ffba3b;
+  --color-py: #1edbfc;
+  --color-data: #8511ba;
+  --color-ux: #d111ce;
 }
 
 body {
-  background-color: #5fcf80;
+  background-color: var(--color-bckgrnd);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
 a {
-  color: #5fcf80;
+  color: var(--color-bckgrnd);
 }
 
 main {
@@ -70,7 +80,7 @@ main .student-cards .student-card {
   border-radius: 10px;
   padding: 10px;
   display: block;
-  border: 5px solid #3ac162;
+  border: 5px solid var(--color-bckgrnd-dark);
   position: relative;
   overflow: hidden;
 }
@@ -92,7 +102,7 @@ main .student-cards .student-card .student-name, main .student-cards .student-ca
   margin: 10px;
 }
 main .student-cards .student-card a {
-  color: #3ac162;
+  color: var(--color-bckgrnd-dark);
 }
 
 footer {
@@ -105,29 +115,52 @@ footer {
 /* styles for buttons */
 
 .techDegree {
-  color:#5fcf80;
+  color:var(--color-bckgrnd);
   padding: 7px 15px;
   font-size: 1em;
   margin: 20px 5px;
   border-radius: 5px;
-  border: solid 3px #3ac162;
+  border: solid 3px var(--color-bckgrnd-dark);
   background-color: white;
   box-shadow: inset;
   animation: bouncy 5s linear;
   position: relative;
   transition: all .5s ease-in-out;
+}
 
-
+.techDegree.fewd-btn {
+  color: var(--color-fewd);
+  border: solid 3px var(--color-fewd);
+}
+.techDegree.fsjs-btn {
+  color: var(--color-fsjs);
+  border: solid 3px var(--color-fsjs);
+}
+.techDegree.web-btn {
+  color: var(--color-web);
+  border: solid 3px var(--color-web);
+}
+.techDegree.py-btn {
+  color: var(--color-py);
+  border: solid 3px var(--color-py);
+}
+.techDegree.data-btn {
+  color: var(--color-data);
+  border: solid 3px var(--color-data);
+}
+.techDegree.ux-btn {
+  color: var(--color-ux);
+  border: solid 3px var(--color-ux);
 }
 
 .techDegree:hover {
-  background-color: #5fcf80;
+  background-color: var(--color-bckgrnd);
   cursor: pointer;
   color: white;
 }
 
 .techDegree-active {
-  background-color: #5fcf80;
+  background-color: var(--color-bckgrnd);
   color: white;
 }
 
