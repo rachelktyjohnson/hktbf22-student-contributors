@@ -63,6 +63,14 @@ const data = [
     favorite_course_url:
       "https://teamtreehouse.com/library/python-basics-3",
   },
+  {
+    name: "Dustin Usey",
+    treehouse_username: "dustinusey",
+    techdegree_slug: "fewd",
+    favorite_course_name: "JavaScript Basics",
+    favorite_course_url:
+      "https://teamtreehouse.com/library/javascript-basics",
+  },
 ];
 
 const slug_map = {
@@ -73,3 +81,10 @@ const slug_map = {
   data: "Data Analysis TechDegree",
   ux: "User Experience TechDegree",
 };
+
+
+const config = {
+  toggles: {
+    viewTypes: true
+  }
+}

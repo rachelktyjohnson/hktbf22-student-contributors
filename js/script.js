@@ -191,3 +191,36 @@ colorUpdate(studentCardsData, '#8511ba');
 colorUpdate(studentCardsPython, '#1edbfc');
 colorUpdate(studentCardsFEWD, '#07870b');
 colorUpdate(studentCardsUX, '#d111ce');
+
+
+
+
+
+// view toggles
+const viewTypeContainer = document.getElementById('viewTypeContainer');
+const gridBtn = viewTypeContainer.querySelector('button.grid-view');
+const listBtn = viewTypeContainer.querySelector('button.list-view');
+const studentCards = document.getElementById('studentCards');
+
+// visibility
+if (config.toggles.viewTypes) {
+  viewTypeContainer.style.display = 'flex';
+} else {
+  viewTypeContainer.style.display = 'none';
+}
+
+// toggle icons
+
+gridBtn.addEventListener('click', () => {
+  studentCards.classList = 'student-cards';
+  // btn styles
+  gridBtn.classList.add('active');
+  listBtn.classList.remove('active');
+});
+
+listBtn.addEventListener('click', () => {
+  studentCards.classList = 'student-cards list';
+  // btn styles
+  gridBtn.classList.remove('active');
+  listBtn.classList.add('active');
+})

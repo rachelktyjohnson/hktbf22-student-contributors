@@ -53,6 +53,46 @@ main h2 {
     font-size: 2.4rem;
   }
 }
+
+main .view-type-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+}
+main .view-type-container button {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  padding: .5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: .25rem;
+  cursor: pointer;
+  transition: background .3s ease, filter .3s ease;
+}
+main .view-type-container button.active,
+main .view-type-container button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  filter: invert(1);
+}
+
+main .view-type-container button img {
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0.5;
+  pointer-events: none;
+  transition: opacity .3s ease;
+}
+main .view-type-container button:hover img {
+  opacity: 1;
+}
+main .view-type-container button.active img {
+  opacity: 1;
+}
+
+
 main .student-cards {
   background: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -61,6 +101,14 @@ main .student-cards {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 15px;
+}
+/* when list view is activated */
+main .student-cards.list {
+  display: flex;
+  flex-direction: column;
+}
+main .student-cards.list .student-card {
+  display: flex;
 }
 @media (min-width: 768px) {
   main .student-cards {
