@@ -81,3 +81,10 @@ const slug_map = {
   data: "Data Analysis TechDegree",
   ux: "User Experience TechDegree",
 };
+
+
+const config = {
+  toggles: {
+    viewTypes: true
+  }
+}
