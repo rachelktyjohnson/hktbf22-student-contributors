@@ -200,7 +200,7 @@ colorUpdate(studentCardsUX, '#d111ce');
 const viewTypeContainer = document.getElementById('viewTypeContainer');
 const gridBtn = viewTypeContainer.querySelector('button.grid-view');
 const listBtn = viewTypeContainer.querySelector('button.list-view');
-const studentCards = document.getElementById('studentCards');
+const studentCardsContainer = document.getElementById('studentCards');
 
 // visibility
 if (config.toggles.viewTypes) {
@@ -212,15 +212,26 @@ if (config.toggles.viewTypes) {
 // toggle icons
 
 gridBtn.addEventListener('click', () => {
-  studentCards.classList = 'student-cards';
+  studentCardsContainer.classList = 'student-cards';
   // btn styles
   gridBtn.classList.add('active');
   listBtn.classList.remove('active');
 });
 
 listBtn.addEventListener('click', () => {
-  studentCards.classList = 'student-cards list';
+  studentCardsContainer.classList = 'student-cards list';
   // btn styles
   gridBtn.classList.remove('active');
   listBtn.classList.add('active');
+});
+
+
+
+
+// student card animation delays
+const studentCards = document.querySelectorAll('.student-card');
+let animationDelay = 0;
+studentCards.forEach(studentCard => {
+  studentCard.style.animationDelay = `.${animationDelay}s`;
+  animationDelay += 250;
 })
