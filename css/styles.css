@@ -131,6 +131,9 @@ main .student-cards .student-card {
   border: 5px solid var(--color-bckgrnd-dark);
   position: relative;
   overflow: hidden;
+  transform: translateY(50px);
+  opacity: 0;
+  animation: cardAnimate 1s .25s ease forwards;
 }
 .mike {
     height: 35px;
@@ -222,5 +225,15 @@ footer {
   100%{top:0em;}
 }
 
+@keyframes cardAnimate {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
