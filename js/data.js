@@ -71,6 +71,14 @@ const data = [
     favorite_course_url:
       "https://teamtreehouse.com/library/javascript-basics",
   },
+  {
+    name: "Dylan Bailey",
+    treehouse_username: "iamdylanbailey",
+    techdegree_slug: "fewd",
+    favorite_course_name: "JavaScript Basics",
+    favorite_course_url:
+    "https://teamtreehouse.com/library/modular-css-with-sass"
+  }
 ];
 
 const slug_map = {
